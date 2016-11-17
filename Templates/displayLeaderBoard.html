@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+    {% block body %}
+        <form action='/leaderBoard' method='POST'>
+		<div class='div9'>
+			<table>
+				<tr>
+					<th>Rank</th><td>&nbsp</td>
+					<th>Time</th><td>&nbsp</td>
+					<th>Name</th>
+				</tr>
+
+				{% for row in range(number) %}
+					<tr><td>{{ loop.index }}</td>
+						{% for col in range(2) %}
+						<td>&nbsp&nbsp</td>	<td>{{ list[row][col] }} </td>
+						{% endfor %}
+
+					</tr>
+				{% endfor %}
+
+			</table>
+			</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<h1>Your Position on the Leaderboard is: </h1>
+			<p id='position'>{{ position }}</p>
+			<a href="/"><input type="button" value="Play Again" class='button myButton'></a><br>
+        </form>
+    {% endblock %}

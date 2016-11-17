@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+    {% block body %}
+        <form action='/display_game' method='POST'>
+
+			<h1>Thanks for attempting my Word Game!!</h1>
+			<div id='start'>
+			<p>1. When you 'Start Game' I will pluck a Random Word from the sky.</p>
+			<p>2. The timer will start as soon as the word appears.</p>
+			<p>3. You must enter 7 words with letters from the given Random Word.</p>
+			<p>4. All words must have at least 3 letters.</p>
+			<p>5. Words cannot be duplicated.</p>
+			<p>6. You cannot use the Random Word.</p>
+			<p>7. The word must be a real word as per my dictionary in the sky.</p>
+			<p>8. If you are successful you may enter the leaderboard.</p>
+			<p>9. You will then be shown your position on said leaderboard.</p>
+			<p>10. If you are unsuccessful then please try again.</P>
+
+         </div>
+
+            <input type="Submit" class='button myButton' value="Start Game"><br>
+        </form>
+    {% endblock %}

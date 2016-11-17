@@ -1,0 +1,110 @@
+body{
+	background:radial-gradient(white,#3384ff);
+	background-color:#d4edff;
+	width:500px;
+	height:500px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:5%;
+	}
+h1{
+	text-align:center;
+}
+h2{
+	text-align:center;
+	color:navy;
+	text-shadow:1px 1px 2px #000000;
+	}
+p{
+		text-align:center;
+	}
+.copyright{
+
+	position:absolute;
+	left:42%;
+	bottom:3%;
+}
+input[type='text']{
+	background-color:rgb(230, 230, 230);
+	height:40px;
+	width:180px;
+	font-size:22px;
+	text-align:center;
+	}
+.div1{
+	position:absolute;
+	left:43%;
+    bottom:30%;
+	}
+.div9{
+	position:absolute;
+	left:43%;
+    bottom:52%;
+	}
+.names{
+	Color:navy;
+	font-size:20px;
+	font-weight:bold;
+	}
+.texts{
+	position:relative;
+	left:20px;
+	}
+#texts2{
+	position:relative;
+	left:32px;
+	}
+.myButton{
+	position:absolute;
+	bottom:10%;
+	left:43%;
+	height:65px;
+	width:190px;
+
+	}
+.button{
+	background-color:#3298ff;
+	border-bottom:4px solid #a4a4a4;
+	font-weight:bold;
+	font-size:30px;
+	border-radius:10px;
+}
+.myButton2{
+	position:absolute;
+	bottom:20%;
+	left:43%;
+	height:65px;
+	width:190px;
+	}
+.start{
+	font-size:12px;
+}
+#time{
+	background:transparent;
+	border:none;
+	position:absolute;
+	bottom:47%;
+	left:37%;
+	height:130px;
+	width:380px;
+	font-size:70px;
+	color:Navy;
+}
+#inputName{
+	position:absolute;
+	bottom:35%;
+	left:40%;
+	width:250px;
+}
+#inputName1{
+	position:absolute;
+	bottom:42%;
+	left:40%;
+	width:250px;
+}
+#position{
+    position:absolute;
+	bottom:13%;
+	left:48%;
+	font-size:60px;
+}

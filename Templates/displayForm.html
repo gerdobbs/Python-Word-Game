@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+    {% block body %}
+        <form action='/processGame' method='POST'>
+
+			<h1> {{ word }} </h1>
+			<div class='div1'>
+				<input type="TEXT" name="first" placeholder="First word" autofocus autocomplete="off"><br>
+				<input type="TEXT" name="second" placeholder="Second word"  autocomplete="off"><br>
+				<input type="TEXT" name="third" placeholder="Third word" autocomplete="off"><br>
+				<input type="TEXT" name="fourth" placeholder="Fourth word" autocomplete="off"><br>
+				<input type="TEXT" name="fifth" placeholder="Fifth word" autocomplete="off"><br>
+			    <input type="TEXT" name="sixth" placeholder="Sixth word"  autocomplete="off"><br>
+				<input type="TEXT" name="seventh" placeholder="Seventh word"  autocomplete="off"><br>
+				<p> {{ word1 }} <p>
+			</div>
+			<input type="Submit" value="Submit" class='button myButton'><br>
+        </form>
+    {% endblock %}

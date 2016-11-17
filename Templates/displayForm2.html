@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+    {% block body %}    
+        <form action='/leaderBoardAction' method='POST'>
+			<h1> The word you were bequeath is: </h1>
+			<h1>{{ word }}</h1>
+           <p>The words you entered were:{{ word2}}</p>
+			<p>{% for row in word1 %}<p>
+					<p>{{ row }} </p>
+						
+				{% endfor %}
+			
+			
+			
+			
+			
+			<input id='time' type="text" name='inputTime' value='{{ time }}' id='inputTime'style='display:{{ displayText }}' readonly>
+            <label style='display:{{ displayText }}'>Your Time: </label>
+            <input type="text" id='inputName'name='inputName'style='display:{{ displayText }}'>
+			<label id='inputName1' style='display:{{ displayText }}'>Enter Your Name: </label>
+            <input type="Submit" value="Submit" class='button myButton2' style='display:{{ display }}'>
+			<a href="/"><input type="button" value="Play Again" class='button myButton'></a><br>
+			
+			
+        </form>
+    {% endblock %}
